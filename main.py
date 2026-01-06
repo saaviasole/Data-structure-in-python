@@ -19,3 +19,29 @@ print(student["name"])
 student["marks"] = 92
 print(student)
 student["age"] = 14
+print(student)
+del student["class"]
+print(student)
+print(student.keys())
+print(student.values())
+
+
+student_list = [
+    [1, "Amit", "A"],
+    [2, "Neha", "B"],
+    [3, "Ravi", "A"],
+    [4, "Pooja", "c"],
+    [5, "Karan", "B"]
+
+]
+
+student_dict = {}
+
+for student in student_list:
+    roll_no = student[0]
+    name = student[1]
+    grade = student[2]
+    student_dict[roll_no] = {"Name": name, "Grade": grade}
+
+    print("Students Dictionary")
+    print(student_dict)
